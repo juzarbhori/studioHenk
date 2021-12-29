@@ -1,0 +1,275 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.main-head {
+  font-family: "ff-scala-sans-pro";
+  font-weight: 400;
+  text-transform: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .2em;
+  color: rgba(0, 0, 0, .88);
+}
+
+.step-title {
+  font-family: "ff-scala-sans-pro";
+  font-weight: 400;
+  text-transform: none;
+  color: rgba(0, 0, 0, .88);
+  letter-spacing: .15em;
+  margin-top: 55px;
+}
+
+.step-subtitle {
+  font-family: "ff-scala-sans-pro";
+  font-weight: 300;
+  text-transform: none;
+  color: rgba(0, 0, 0, .88);
+  letter-spacing: .15em;
+}
+
+.option-label {
+  font-size: 1rem;
+  font-family: "ff-scala-sans-pro";
+  font-weight: 300;
+  text-transform: none;
+}
+
+.main-container-left {
+  padding: 30px 25px 30px 70px;
+}
+
+.main-container-right {
+  padding: 30px 70px 30px 25px;
+}
+
+.price-title {
+  font-size: 1.125rem;
+  line-height: calc(28 / 18);
+  font-family: "ff-scala-sans-pro";
+  font-weight: 400;
+  text-transform: none;
+  color: rgba(0, 0, 0, .88);
+  margin-top: 40px;
+}
+
+.price-subtitle {
+  font-size: 2rem;
+  line-height: calc(28 / 18);
+  font-family: "ff-scala-sans-pro";
+  font-weight: 400;
+  text-transform: none;
+  color: rgba(0, 0, 0, .88);
+  margin-top: 40px;
+}
+
+.description-title {
+  font-size: .75rem;
+  font-family: "ff-scala-sans-pro";
+  font-weight: 400;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.img-size {
+  width: 100%;
+  height: auto;
+
+}
+
+.description-data {
+  font-size: 0.95rem;
+  font-family: "ff-scala-sans-pro";
+  font-weight: 300;
+  letter-spacing: .15em;
+  text-transform: none;
+  margin: unset;
+}
+
+.delivery {
+  font-size: 1.125rem;
+  line-height: calc(28 / 18);
+  font-family: "ff-scala-sans-pro";
+  font-weight: 400;
+  text-transform: none;
+  color: rgba(0, 0, 0, .88);
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.delivery-desc {
+  font-size: 1.125rem;
+  line-height: calc(28 / 18);
+  font-family: "ff-scala-sans-pro";
+  font-weight: 400;
+  text-transform: none;
+  color: rgba(0, 0, 0, .88);
+}
+
+.divider-margin {
+  margin: 11px 0 !important;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.pl-10 {
+  padding-left: 10;
+}
+
+.pr-10 {
+  padding-right: 10;
+}
+
+.ml-10 {
+  margin-left: 10;
+}
+
+.mr-10 {
+  margin-right: 10;
+}
+
+.mt-10 {
+  margin-top: 10;
+}
+
+.mb-10 {
+  margin-bottom: 10;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* image selector css */
+
+/* HIDE RADIO */
+.remove-radio {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.selector-size {
+  width: 72%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, .16);
+  cursor: pointer;
+  opacity: .45;
+}
+
+
+.ant-radio-wrapper-checked+img {
+  opacity: 1;
+}
+
+.label-text {
+  font-size: .75rem;
+  display: block;
+  font-family: "ff-scala-sans-pro";
+  font-weight: 300;
+  text-transform: none;
+  padding: 10px;
+}
+
+.plus-style {
+
+  font-size: 22px !important;
+  color: rgba(0, 0, 0, .88) !important;
+  margin-left: 20px;
+}
+
+.minus-style {
+
+  margin-right: 20px;
+  font-size: 22px !important
+}
+
+.delivery-time {
+  font-size: 1rem;
+  font-family: "ff-scala-sans-pro";
+  font-weight: 300;
+  text-transform: none;
+  margin: unset;
+}
+
+.amount {
+  font-size: 1rem;
+  font-family: "ff-scala-sans-pro";
+  font-weight: 300;
+  text-transform: none;
+}
+
+.cart-detail {
+  font-size: 1.3rem;
+  display: inline-block;
+  font-family: "ff-scala-sans-pro";
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.cart-number {
+  font-size: 1.3rem;
+  font-family: "ff-scala-sans-pro";
+  font-weight: 400;
+  text-transform: none;
+}
+
+.add-btn {
+  height: 50px !important;
+}
+
+.cancel-btn {
+  height: 50px !important;
+  background-color: #d1d1d159 !important;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.checkout-img {
+  width: 300px;
+  height: 250px;
+}
+
+.checkout-desc {
+  font-family: "ff-scala-sans-pro";
+  font-weight: 300;
+  text-transform: none;
+  font-size: 1rem;
+  margin-bottom: 5px !important;
+}
+
+.checkout-title {
+  font-size: 1rem;
+  font-family: "ff-scala-sans-pro";
+  font-weight: 300;
+  text-transform: none;
+}
+
+.fat-divider {
+  height: 10px;
+}
+
+.image-skeleton
+{
+  width: 250px;
+  margin-top: 19px;
+  height: 119px;
+}
