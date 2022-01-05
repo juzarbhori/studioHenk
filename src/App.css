@@ -234,6 +234,11 @@
   height: 50px !important;
 }
 
+.checkout-btn {
+  margin-top: 20px;
+  height: 36px !important;
+}
+
 .cancel-btn {
   height: 50px !important;
   background-color: #d1d1d159 !important;
@@ -267,8 +272,7 @@
   height: 10px;
 }
 
-.image-skeleton
-{
+.image-skeleton {
   width: 250px;
   margin-top: 19px;
   height: 119px;
