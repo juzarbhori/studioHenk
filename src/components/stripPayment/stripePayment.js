@@ -73,7 +73,7 @@ const StripePayment = ({ closePaymentModal }) => {
       >
         <div className="App">
           <img src={tickIcon} width="150" alt="icon" />
-          <h2> Payment Succesfull</h2>
+          <h2> Payment Succesfull </h2>
         </div>
       </Modal>
     );
