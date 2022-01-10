@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/hi-malaya/studioHenk/static/css/main.af56612a.css",
+    "main.js": "/hi-malaya/studioHenk/static/js/main.bc188ea4.js",
+    "static/js/787.b25b6543.chunk.js": "/hi-malaya/studioHenk/static/js/787.b25b6543.chunk.js",
+    "static/media/checkpng": "/hi-malaya/studioHenk/static/media/checkbcd1a436590360ed53ac2f46c76e43e4.de390e5faa0287ea96dd.png",
+    "static/media/wall-mounted-tables-25206.webp": "/hi-malaya/studioHenk/static/media/wall-mounted-tables-25206.c2999706b1d4c2c7a07d.webp",
+    "static/media/logo.svg": "/hi-malaya/studioHenk/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/hi-malaya/studioHenk/index.html",
+    "main.af56612a.css.map": "/hi-malaya/studioHenk/static/css/main.af56612a.css.map",
+    "main.bc188ea4.js.map": "/hi-malaya/studioHenk/static/js/main.bc188ea4.js.map",
+    "787.b25b6543.chunk.js.map": "/hi-malaya/studioHenk/static/js/787.b25b6543.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af56612a.css",
+    "static/js/main.bc188ea4.js"
+  ]
+}
