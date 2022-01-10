@@ -25,11 +25,18 @@ import {
 import checkimg from "./wall-mounted-tables-25206.webp";
 import ImageSelector from "./components/selector";
 import ImageViewer from "./components/imageViewer";
-import ModalCheckout from "./components/checkoutModal";
 import StripePayment from "./components/stripPayment/stripePayment";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
+
+import Footer from "./components/Footer";
 import axios from "axios";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import CartPage from "./components/cartPage";
+import AddDetails from "./components/addDetails";
+
+import NavBarFun from "./components/Navbar";
 const { Option } = Select;
 
 function App() {
@@ -56,25 +63,39 @@ function App() {
   }, []);
 
   return (
-    <div style={{ width: "99%", padding: "40px 0" }}>
-      <Row gutter={[14, 14]}>
-        <ImageViewer selectImage={selectImage} />
-        {productData && (
-          <ImageSelector
-            setIsModalVisible={setIsModalVisible}
-            productData={productData}
-            setProductData={setProductData}
-            selectImage={selectImage}
-            setSelectImage={setSelectImage}
-          />
-        )}
-      </Row>
-      <ModalCheckout
-        loading={loading}
-        setIsModalVisible={setIsModalVisible}
-        isModalVisible={isModalVisible}
-      />
-    </div>
+    <>
+      <NavBarFun />
+      <div>
+        <BrowserRouter>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Home
+                  setIsModalVisible={setIsModalVisible}
+                  productData={productData}
+                  setProductData={setProductData}
+                  selectImage={selectImage}
+                  setSelectImage={setSelectImage}
+                />
+              }
+            />
+            <Route
+              path="/cart"
+              element={
+                <CartPage
+                  loading={loading}
+                  setIsModalVisible={setIsModalVisible}
+                  isModalVisible={isModalVisible}
+                />
+              }
+            />
+            <Route path="/details" element={<AddDetails />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+      <Footer />
+    </>
   );
 }
 

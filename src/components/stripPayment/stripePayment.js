@@ -82,10 +82,10 @@ const StripePayment = ({ closePaymentModal }) => {
   return (
     <form onSubmit={handleSubmit}>
       <Row>
-        <Col span={24}>
+        <Col md={{ span: 24 }}>
           <CardElement options={options} />
         </Col>
-        <Col span={24} className="text-right">
+        <Col md={{ span: 24 }} className="text-right">
           <Button
             className="checkout-btn"
             htmlType="submit"

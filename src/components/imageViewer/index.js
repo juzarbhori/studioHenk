@@ -3,99 +3,98 @@ import React from "react";
 
 const ImageViewer = ({ selectImage }) => {
   return (
-    <Col span={12}>
+    <Col md={{ span: 12 }} xs={{ span: 24 }}>
       <div className="main-container-left">
         {selectImage && (
           <img src={selectImage} alt="iamge" className="img-size" />
         )}
-
         <Row>
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 18 }}>
             <h3 className="price-title fl">Specifications of your table</h3>
           </Col>
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 6 }}>
             <h3 className="price-subtitle fr">€ 2570</h3>
           </Col>
-          <Col span={24}>
+          <Col md={{ span: 24 }} xs={{ span: 24 }}>
             <h3 className="description-title fl">TABLEOP</h3>
           </Col>
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fl">Material</p>
           </Col>
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fr">HPL</p>
           </Col>
           <Divider className="divider-margin" />
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fl">Material</p>
           </Col>
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fr">HPL</p>
           </Col>
           <Divider className="divider-margin" />
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fl">Material</p>
           </Col>
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fr">HPL</p>
           </Col>
           <Divider className="divider-margin" />
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fl">Material</p>
           </Col>
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fr">HPL</p>
           </Col>
           <Divider className="divider-margin" />
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fl">Material</p>
           </Col>
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fr">HPL</p>
           </Col>
           <Divider className="divider-margin" />
-          <Col span={24}>
+          <Col md={{ span: 24 }} xs={{ span: 24 }}>
             <h3 className="description-title fl">TABLEOP</h3>
           </Col>
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fl">Material</p>
           </Col>
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fr">HPL</p>
           </Col>
           <Divider className="divider-margin" />
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fl">Material</p>
           </Col>
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fr">HPL</p>
           </Col>
           <Divider className="divider-margin" />
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fl">Material</p>
           </Col>
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fr">HPL</p>
           </Col>
           <Divider className="divider-margin" />
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fl">Material</p>
           </Col>
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fr">HPL</p>
           </Col>
           <Divider className="divider-margin" />
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fl">Material</p>
           </Col>
-          <Col span={12}>
+          <Col md={{ span: 12 }} xs={{ span: 12 }}>
             <p className="description-data fr">HPL</p>
           </Col>
           <Divider className="divider-margin" />
-          <Col span={24}>
+          <Col md={{ span: 24 }}>
             <p className="delivery fl">Delivery & payment</p>
           </Col>
-          <Col span={24}>
+          <Col md={{ span: 24 }}>
             <p className="delivery-desc fl">
               Did you find a piece of furniture you love? Once you've placed
               your order, we ask for a down payment of € 500,-. Is your order in

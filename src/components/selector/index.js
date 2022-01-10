@@ -6,6 +6,7 @@ import {
   DeleteFilled,
 } from "@ant-design/icons";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const { Option } = Select;
 
@@ -60,7 +61,7 @@ const ImageSelector = ({
   };
 
   return (
-    <Col span={12}>
+    <Col md={{ span: 12 }} xs={{ span: 24 }}>
       <Form
         name="select-form"
         initialValues={{
@@ -91,7 +92,7 @@ const ImageSelector = ({
                               shape="square"
                             />
                           ) : (
-                            <Col span={5}>
+                            <Col md={{ span: 5 }} xs={{ span: 8 }}>
                               <label key={data.id}>
                                 <Radio
                                   value={data?.id}
@@ -117,7 +118,12 @@ const ImageSelector = ({
                   <Row gutter={[24, 24]}>
                     {steps.options.map((data, i) => {
                       return (
-                        <Col className="gutter-row" key={i} span={24}>
+                        <Col
+                          className="gutter-row"
+                          key={i}
+                          md={{ span: 24 }}
+                          xs={{ span: 24 }}
+                        >
                           <p>{data?.title}</p>
                           <Form.Item name={steps?.value + data?.value} label="">
                             <Select
@@ -143,11 +149,11 @@ const ImageSelector = ({
             );
           })}
         </div>
-        <Row justify="end" gutter={[18, 18]}>
-          <Col offset={13} span={5}>
+        <Row justify="end" gutter={[18, 18]} className="main-container-right">
+          <Col md={{ offset: 13, span: 5 }} xs={{ span: 12 }}>
             <p className="cart-detail"></p>Quantity
           </Col>
-          <Col span={6}>
+          <Col md={{ span: 6 }} xs={{ span: 12 }}>
             <MinusCircleOutlined
               className="cursor minus-style"
               onClick={() => {
@@ -170,17 +176,19 @@ const ImageSelector = ({
               }}
             />
           </Col>
-          <Col offset={13} span={5}>
+          <Col md={{ offset: 13, span: 5 }} xs={{ span: 12 }}>
             <p className="amount"> Amount</p>
           </Col>
-          <Col span={6}>€ 2035</Col>
-          <Col offset={13} span={11}>
+          <Col md={{ span: 6 }} xs={{ span: 12 }}>
+            € 2035
+          </Col>
+          <Col md={{ offset: 13, span: 11 }} xs={{ span: 24 }}>
             <p className="delivery-time">Delivery time 13-14 weeks</p>
           </Col>
-          <Col offset={13} span={11}>
+          <Col md={{ offset: 13, span: 11 }} xs={{ span: 24 }}>
             <Form.Item>
-              <Button block className="add-btn" htmlType="submit">
-                Add to shopping cart
+              <Button className="add-btn" htmlType="submit">
+                <Link to="/cart">Add to shopping cart</Link>
               </Button>
             </Form.Item>
           </Col>

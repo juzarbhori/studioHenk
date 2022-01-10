@@ -232,6 +232,15 @@
 
 .add-btn {
   height: 50px !important;
+  width: 80%;
+}
+
+.checkout-btn {
+  width: 40%;
+}
+
+.go-back {
+  margin-right: 20px;
 }
 
 .checkout-btn {
@@ -276,4 +285,48 @@
   width: 250px;
   margin-top: 19px;
   height: 119px;
+}
+
+.padding-main {
+  padding: 30px 69px 15px 69px;
+}
+
+
+
+/* Sticky Header */
+
+@media only screen and (max-width: 600px) {
+  .padding-main {
+    padding: 12px 39px 8px 39px !important;
+  }
+
+  .main-container-left {
+    padding: 0px 11px 0px 19px;
+  }
+
+  .main-container-right {
+    padding: 0px 11px 0px 19px;
+  }
+
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .padding-main {
+    padding: 12px 39px 8px 39px !important;
+  }
+
+  .main-container-left {
+    padding: 0px 11px 0px 19px;
+  }
+
+  .main-container-right {
+    padding: 0px 11px 0px 19px;
+  }
+
+  .hidden-xs {
+    display: none !important;
+  }
 }
