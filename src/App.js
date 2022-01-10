@@ -66,7 +66,7 @@ function App() {
     <>
       <NavBarFun />
       <div>
-        <BrowserRouter>
+        <BrowserRouter basename="studioHenk">
           <Routes>
             <Route
               path="/"
