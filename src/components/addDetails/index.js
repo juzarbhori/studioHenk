@@ -296,7 +296,7 @@ const AddDetails = () => {
               <Input />
             </Form.Item>
           </Col>
-          <Col md={{ span: 24 }}>
+          <Col md={{ span: 24 }} className="text-right">
             <Form.Item
               wrapperCol={{
                 offset: 8,

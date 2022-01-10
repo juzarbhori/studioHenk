@@ -245,7 +245,10 @@
 
 .checkout-btn {
   margin-top: 20px;
-  height: 36px !important;
+}
+
+.fr {
+  float: right;
 }
 
 .cancel-btn {

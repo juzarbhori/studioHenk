@@ -132,7 +132,7 @@ const CartPage = ({ loading, isModalVisible }) => {
             <p className="checkout-desc">€2,285.00 </p>
           </Col>
           <Col md={{ offset: 17, span: 2 }} xs={{ span: 24 }}></Col>
-          <Col md={{ span: 24 }}>
+          <Col md={{ offset: 17, span: 7 }} xs={{ span: 24 }}>
             <Button block className="add-btn" htmlType="submit">
               <Link to="/details">Add Details</Link>
             </Button>
