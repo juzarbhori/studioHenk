@@ -1,3 +1,22 @@
+@font-face {
+  font-family: AcmeGothic;
+  src: url(https://masara.ro/wp-content/uploads/2021/10/AcmeGothic.woff2);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: AcmeGothic !important;
+}
+
+
+
+
+body {
+    font-family: 'Montserrat'  !important;
+}
+
+
+
+
 .App {
   text-align: center;
 }
@@ -9,7 +28,6 @@
 
 
 .main-head {
-  font-family: "ff-scala-sans-pro";
   font-weight: 400;
   text-transform: none;
   text-transform: uppercase;
@@ -19,7 +37,6 @@
 }
 
 .step-title {
-  font-family: "ff-scala-sans-pro";
   font-weight: 400;
   text-transform: none;
   color: rgba(0, 0, 0, .88);
@@ -28,16 +45,16 @@
 }
 
 .step-subtitle {
-  font-family: "ff-scala-sans-pro";
   font-weight: 300;
   text-transform: none;
   color: rgba(0, 0, 0, .88);
   letter-spacing: .15em;
+  font-size: 16px;
+
 }
 
 .option-label {
   font-size: 1rem;
-  font-family: "ff-scala-sans-pro";
   font-weight: 300;
   text-transform: none;
 }
@@ -53,7 +70,6 @@
 .price-title {
   font-size: 1.125rem;
   line-height: calc(28 / 18);
-  font-family: "ff-scala-sans-pro";
   font-weight: 400;
   text-transform: none;
   color: rgba(0, 0, 0, .88);
@@ -63,7 +79,6 @@
 .price-subtitle {
   font-size: 2rem;
   line-height: calc(28 / 18);
-  font-family: "ff-scala-sans-pro";
   font-weight: 400;
   text-transform: none;
   color: rgba(0, 0, 0, .88);
@@ -72,10 +87,8 @@
 
 .description-title {
   font-size: .75rem;
-  font-family: "ff-scala-sans-pro";
   font-weight: 400;
   letter-spacing: .15em;
-  text-transform: uppercase;
   margin-bottom: 10px;
 }
 
@@ -87,7 +100,6 @@
 
 .description-data {
   font-size: 0.95rem;
-  font-family: "ff-scala-sans-pro";
   font-weight: 300;
   letter-spacing: .15em;
   text-transform: none;
@@ -97,7 +109,6 @@
 .delivery {
   font-size: 1.125rem;
   line-height: calc(28 / 18);
-  font-family: "ff-scala-sans-pro";
   font-weight: 400;
   text-transform: none;
   color: rgba(0, 0, 0, .88);
@@ -106,10 +117,9 @@
 }
 
 .delivery-desc {
-  font-size: 1.125rem;
+  font-size: 16px;
   line-height: calc(28 / 18);
-  font-family: "ff-scala-sans-pro";
-  font-weight: 400;
+  font-weight: 300;
   text-transform: none;
   color: rgba(0, 0, 0, .88);
 }
@@ -181,7 +191,6 @@
 .label-text {
   font-size: .75rem;
   display: block;
-  font-family: "ff-scala-sans-pro";
   font-weight: 300;
   text-transform: none;
   padding: 10px;
@@ -202,7 +211,6 @@
 
 .delivery-time {
   font-size: 1rem;
-  font-family: "ff-scala-sans-pro";
   font-weight: 300;
   text-transform: none;
   margin: unset;
@@ -210,7 +218,6 @@
 
 .amount {
   font-size: 1rem;
-  font-family: "ff-scala-sans-pro";
   font-weight: 300;
   text-transform: none;
 }
@@ -218,14 +225,12 @@
 .cart-detail {
   font-size: 1.3rem;
   display: inline-block;
-  font-family: "ff-scala-sans-pro";
   margin: 0;
   padding: 0.5rem 0;
 }
 
 .cart-number {
   font-size: 1.3rem;
-  font-family: "ff-scala-sans-pro";
   font-weight: 400;
   text-transform: none;
 }
@@ -240,7 +245,15 @@
 }
 
 .go-back {
-  margin-right: 20px;
+  float: left;
+
+}
+
+
+
+.go-back a {
+  color: #1b2b3d;
+  font-weight: bold;
 }
 
 .checkout-btn {
@@ -261,21 +274,30 @@
 }
 
 .checkout-img {
-  width: 300px;
-  height: 250px;
+  max-width: 100%;
+
 }
 
 .checkout-desc {
-  font-family: "ff-scala-sans-pro";
   font-weight: 300;
   text-transform: none;
   font-size: 1rem;
   margin-bottom: 5px !important;
 }
 
+
+.cart-desc {
+  font-weight: 300;
+  text-transform: none;
+  font-size: 12px;
+  margin-bottom: 5px !important;
+  padding: 0 5%;
+
+}
+
+
 .checkout-title {
   font-size: 1rem;
-  font-family: "ff-scala-sans-pro";
   font-weight: 300;
   text-transform: none;
 }
@@ -332,4 +354,90 @@
   .hidden-xs {
     display: none !important;
   }
+}
+
+
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0,0,0,.55);
+  color: #1b2b3d;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  font-family: AcmeGothic !important;
+
+}
+
+
+
+.footer h4{
+  font-size: 16px ;
+
+}
+
+
+
+
+
+.footer h3{
+  font-size: 16px ;
+  font-weight: 600 !important;
+  line-height: 22px;
+
+}
+
+
+
+.footer img{
+  max-width: 133px;
+
+}
+
+
+button.ant-btn.add-btn {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: #fff;
+  box-shadow: var(--btn-shop-box-shadow);
+  background-color: rgb(27 43 61);
+  width: 100%;
+  font-size: 13px;
+  line-height: 18px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border-width: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: none;
+  letter-spacing: .3px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color .25s ease, background-color .25s ease, border-color .25s ease, box-shadow .25s ease, opacity .25s ease;
+}
+
+
+
+.ant-input{
+
+  padding: 0 15px;
+    max-width: 100%;
+    width: 100%;
+    height: 42px;
+    border: 2px solid rgb(129 129 129 / 20%) !important;
+    border-radius: 2px !important;
+    color: var(--wd-form-color);
+    background-color: var(--wd-form-bg);
+    box-shadow: none;
+    vertical-align: middle;
+    font-size: 14px;
+    transition: border-color .5s ease;
 }

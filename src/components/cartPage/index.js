@@ -31,10 +31,10 @@ const CartPage = ({ loading, isModalVisible }) => {
     return (
       <>
         <Row gutter={[8, 8]} className="text-right hidden-xs">
-          <Col md={{ offset: 14, span: 2 }}>Price</Col>
-          <Col md={{ span: 2 }}>Quantity</Col>
+          <Col md={{ offset: 14, span: 2 }}><h6>Price</h6></Col>
+          <Col md={{ span: 2 }}><h6>Quantity</h6></Col>
           <Col md={{ span: 3 }} offset={3}>
-            Total
+            <h6> Total</h6>
           </Col>
         </Row>
         <Divider className="fat-divider" />
@@ -44,25 +44,25 @@ const CartPage = ({ loading, isModalVisible }) => {
           </Col>
           <Col md={{ span: 8 }} xs={{ span: 24 }}>
             <h2 className="checkout-title">New Classic</h2>
-            <p className="checkout-desc">
+            <p className="cart-desc">
               Product number: T-RC-200-90-4-0720-STD-NC-B
             </p>
-            <p className="checkout-desc">
+            <p className="cart-desc">
               Product number: T-RC-200-90-4-0720-STD-NC-B
             </p>
-            <p className="checkout-desc">
+            <p className="cart-desc">
               Product number: T-RC-200-90-4-0720-STD-NC-B
             </p>
-            <p className="checkout-desc">
+            <p className="cart-desc">
               Product number: T-RC-200-90-4-0720-STD-NC-B
             </p>
-            <p className="checkout-desc">
+            <p className="cart-desc">
               Product number: T-RC-200-90-4-0720-STD-NC-B
             </p>
-            <p className="checkout-desc">
+            <p className="cart-desc">
               Product number: T-RC-200-90-4-0720-STD-NC-B
             </p>
-            <p className="checkout-desc">
+            <p className="cart-desc">
               Product number: T-RC-200-90-4-0720-STD-NC-B
             </p>
           </Col>
@@ -81,7 +81,7 @@ const CartPage = ({ loading, isModalVisible }) => {
           </Col>
           <Col md={{ span: 3 }} xs={{ span: 8 }} className="text-right">
             <p className="checkout-desc cursor">
-              <DeleteFilled /> Delete
+              <DeleteFilled />
             </p>
           </Col>
           <Col

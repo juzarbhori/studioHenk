@@ -18,10 +18,10 @@ const Footer = () => {
         </Col>
         <Col md={{ span: 8 }} xs={{ span: 24 }}>
           <h3>LINK-URI RAPIDE</h3>
-          <h3>LINK-URI RAPIDE</h3>
-          <h3>LINK-URI RAPIDE</h3>
-          <h3>pLINK-URI RAPIDE</h3>
-          <h3>LINK-URI RAPIDE</h3>
+          <h3>TERMENI SI CONDITII</h3>
+          <h3>POLITICĂ DE RETUR</h3>
+          <h3>DECLARATIE CONFORMITATE SI GARANTIE</h3>
+          <h3>ANPC</h3>
           <Divider />
         </Col>
         <Col md={{ span: 8 }} xs={{ span: 24 }}>

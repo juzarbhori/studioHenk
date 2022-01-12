@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import "./style.css";
-import { ShoppingCartOutlined } from "@ant-design/icons";
+import { ShoppingCartOutlined, UserOutlined, HeartOutlined } from "@ant-design/icons";
 
 const NavBarFun = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -26,7 +26,7 @@ const NavBarFun = () => {
     <div className={x.join(" ")}>
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/hi-malaya/studioHenk/">
             <img
               src={"https://masara.ro/wp-content/uploads/2021/10/Asset-1-8.png"}
               alt="Logo"
@@ -37,21 +37,23 @@ const NavBarFun = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+
+              <NavDropdown title="Produse" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.2">
-                  Another action
+                  Mese Lemn Masiv
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">
-                  Something
+                  Mese de Cafea
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
+
               </NavDropdown>
+
+
+              <Nav.Link href="#home">Blog</Nav.Link>
+              <Nav.Link href="#link">Despre noi</Nav.Link>
+              <Nav.Link href="#link">Contact</Nav.Link>
+
+
             </Nav>
           </Navbar.Collapse>
           <Navbar.Collapse className="justify-content-end">
@@ -59,10 +61,10 @@ const NavBarFun = () => {
               <ShoppingCartOutlined />
             </Navbar.Text>
             <Navbar.Text>
-              <ShoppingCartOutlined />
+              <UserOutlined />
             </Navbar.Text>
             <Navbar.Text>
-              <ShoppingCartOutlined />
+              <HeartOutlined />
             </Navbar.Text>
           </Navbar.Collapse>
         </Container>
